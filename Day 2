@@ -1,0 +1,92 @@
+Question 1:
+
+import java.io.*; 
+import java.util.*;
+class UserMainCode{     
+  public int countPrimesInRange(int input1, int input2){      
+ 
+   int count=0;        
+   int pcount=0;         
+  for(int i=input1;i<=input2;i++){   
+      
+  count=0;        
+for(int j=2;j<=Math.sqrt(i);j++) {       
+ 
+if(i%j==0)         
+  count++;       
+  }       
+if(count==0)         
+  pcount++;     
+  } 
+  return count; 
+  }}
+  
+  Question 2:
+  
+  import java.io*;
+import java.util.*;
+class UserMainCode
+{
+   public int allDigitsCount(int input1)
+{
+   String str=Integer.toString(input1);
+   return str.length();
+  }
+}
+
+
+ Question 3:
+ 
+import java.io.*;
+import  java.util.*;
+
+class UserMainCode{
+
+public int uniqueDigitsCount(int input1){
+
+String str = Integer.toString(input1);
+
+int len=str.length();   
+
+int count=0;
+
+for(int i=0;i<len-1;i++){           
+
+for(int j=i+1;j<len;j++){               
+
+if(str.charAt(i)==str.charAt(j)) {           
+
+count++;                     
+break;                 
+}} 
+ }       
+  return len-count;   
+}}
+
+ Question 4:
+ import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+public int nonRepeatDigitsCount(int input1){
+String str = Integer.toString(input1);
+int len=str.length();
+int count=0,pcount=0;
+for(int i=0;i<len;i++)
+{
+          count=0;
+for(int j=0;j<len;j++)
+{
+                if(i!=j)
+if(str.charAt(i)==str.charAt(j))
+{
+count++;
+break;
+}
+}
+            if(count==0)
+              pcount++;
+}
+return pcount;
+}
+}
