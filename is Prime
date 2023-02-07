@@ -1,0 +1,19 @@
+import java.io*;
+import java.util*;
+class UserMainCode;
+{
+Public int isPrime(int input1){
+if(input1<2){
+        return 1;
+    }
+    for (int i=1; i<=input1; i++){
+        if(input1%i==0){
+            return 2;
+        }
+        else{
+            return 1;
+        }
+       }
+     }
+   }
+        
